@@ -107,7 +107,6 @@ module.exports = require('machine').build({
     if (!_.has(inputs.config, 'url')) {
       inputs.config.port = inputs.config.port || '1433';
     }
-    delete inputs.config.port;
     delete inputs.config.adapter;
     delete inputs.config.identity;
 
